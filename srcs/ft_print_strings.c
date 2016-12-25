@@ -14,7 +14,7 @@
 
 static char	get_wide_char_len(wchar_t c)
 {
-	if (c < 0x80)
+	if (c < 0xFF)
 		return (1);
 	else if (c < 0x800)
 		return (2);
